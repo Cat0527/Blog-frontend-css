@@ -17,6 +17,7 @@ pasos para iniciar package.json y sass
     npx nos sirve por si npm no nos toma los cambios-->
 
     <!--hicimos los cambios y quedo bien-->
+    para volver a compilar volvemos a colocar este comando: npx sass --watch assets/sass/main.scss:assets/css/styles.css
     
 ## Pasos y comandos para iniciar con package.jason y sass
 
