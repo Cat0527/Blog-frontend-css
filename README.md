@@ -34,3 +34,21 @@ Se abrio una segunda consola para que la primera corra con sass, en la segunda c
   font-variation-settings:
     "wdth" 100;
 }
+
+link page: https://cat0527.github.io/Blog-frontend-css/
+
+## Comandos para Github
+
+-git init
+-git remote add origin "url de repositorio"
+git status
+git add .
+git commit -m "subiendo-archivos"
+git branch
+git branch -m master main
+git branch 
+git push origin main 
+git status
+
+<!-- Luego de esos pasos git pull que trae nuestros archivos de la nube y luego hacemos un git push origin main>
+
