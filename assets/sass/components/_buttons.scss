@@ -1,0 +1,40 @@
+.button1 {
+    text-align: center;
+}
+
+.button-enviar {
+    width: 20vw;
+    height: 3vw;
+    background-color: $color-verde;
+    border-radius: 5px;
+    border-color: $color-white;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: $color-white;
+}
+
+.button2 {
+    text-align: center;
+}
+
+.button-google {
+    background-color: $color-white2;
+    border-color: $color-white;
+    border: 1px solid $color-grey3;
+    border-radius: 5px;
+    width: 20vw;
+    height: 3vw;
+}
+.button__subscribete {
+    width: 150px;
+    height: 40px;
+    margin-left: 40%;
+    margin-top: 25px;
+    border: 1px solid $color-white3;
+    border-radius: 5px;
+    background-color: $color-white3;
+    color: $color-black;
+    font-size: 18px;
+    font-weight: 600;
+}

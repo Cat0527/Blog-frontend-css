@@ -3,35 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Blog-Frontend-Sass</title>
 </head>
-<!--bosstral npm install bootstrap@5.3.3-->
+<!--bosstrap npm install bootstrap@5.3.3-->
 <!--Caterin Mendez-->
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid d-flex ">
-                <img class="img__logo text-danger" src="assets/img/logos/adl.png" alt="adl">
-                <h2 class="logo__title">Blog FrontEnd</h2>
+        <nav class="navbar navbar-expand-md fixed-top box-nav">
+            <div class="container-fluid navColor mt-2">
+                <div class="ms-5">
+                    <img class="img__logo mb-1" src="assets/img/logos/adl.png" alt="adl">
+                    <a class="navbar-brand me-auto logo__title" href="#">Blog FrontEnd</a>
+                </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto px-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="h6" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="h2" href="post.html">Post</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-    </header>
-    <div>
         <hr class="linea__separacion">
-    </div>
+    </header>
 
     <main>
-        <h2 class="form__text">Registrate ¡Es gratis!</h2>
-        <div class="form__input"><input class="input__casilla" type="Nombre"></div>
-        <div class="form__input"><input class="input__casilla" type="Apellido"></div>
-        <div class="form__input"><input class="input__casilla" type="Email"></div>
-        <div class="form__input"><input class="input__casilla" type="Contraseña"></div>
-        <div class="form__input"><input class="input__casilla" type="Confirma contraseña"></div>
-        <div class="button1"><button>Crea tu cuenta</button></div>
+        <div class="mt-5"> <!--Formulario-->
+            <h2 class="form__text mb-4">Registrate ¡Es gratis!</h2>
+            <div class="form__input"><input class="input__casilla" placeholder="Nombre" type="Nombre"></div>
+            <div class="form__input"><input class="input__casilla" placeholder="Apellido" type="Apellido"></div>
+            <div class="form__input"><input class="input__casilla" placeholder="Email" type="Email"></div>
+            <div class="form__input"><input class="input__casilla" placeholder="Contraseña" type="Contraseña"></div>
+            <div class="form__input"><input class="input__casilla" placeholder="Confirma tu Contraseña" type="Confirma contraseña"></div>
+            <div class="button1">
+                <button class="button-enviar">Crea tu cuenta</button>
+            </div>
+            <div class="button2 mt-4">
+                <button class="button-google">Regístrate con Google <img class="img-icono" src="assets/img/logos/icons8-logo-de-google.svg" alt="icons8-logo-de-google"></button>
+                <p class="mt-3">¿Ya tienes una cuenta? <strong>Inicia sesión</strong></p>
+            </div>
+        </div>
+        <div>
+            <h2 class="title my-5 ms-5">Componente de subscripción</h2>
+        </div>
+
+        <div class="box">
+            <div class="box__hijo">
+                <h2 class="box__title">Mantente actualizado sobre el Desarrollo Front End</h2>
+                <input class="box__sub"></input>
+                <button class="button__subscribete">Suscríbete</button>
+            </div>
+        </div>
+        <hr class="linea__separacion">
     </main>
     <footer>
-
+        <div class="logo d-flex">
+            <img class="img__logo" src="assets/img/logos/adl.png" alt="adl">
+            <h1 class="logo__title">
+                Blog-FrontEnd
+            </h1>
+            <p class="text-Footer">Desafío Latam - 2023</p>
+        </div>
     </footer>
+    <script src="assets/js/logic.js"></script>
 </body>
 </html>
